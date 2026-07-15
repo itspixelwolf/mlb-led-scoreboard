@@ -1,1 +1,75 @@
-
+{
+  "$schema": "./schemas/config.schema.json",
+  "format": 9.0,
+  "matrix": {},
+  "rotation": {
+    "scroll_until_finished": true,
+    "rates": {
+      "live": 15.0,
+      "final": 15.0,
+      "pregame": 15.0
+    },
+    "screens": [
+      {
+        "kind": "game",
+        "priority": 2,
+        "required_status": "live",
+        "teams": [
+          "Dodgers"
+        ]
+      },
+      {
+        "kind": "game",
+        "priority": 1
+      },
+      {
+        "kind": "standings",
+        "seconds": 60,
+        "with_priority": 0
+      },
+      {
+        "kind": "news",
+        "seconds": 60,
+        "with_priority": 0
+      }
+    ]
+  },
+  "news_ticker": {
+    "teams": [
+      "Dodgers"
+    ],
+    "traderumors": true,
+    "mlb_news": true,
+    "countdowns": true,
+    "events": [
+      {
+        "text": "New Year's Eve",
+        "date": "12-31",
+        "max_days": 30
+      }
+    ],
+    "date": true,
+    "date_format": "%A, %B %-d"
+  },
+  "weather": {
+    "apikey": "0b380a620c3e0fbef7b4080783efbfc5",
+    "location": "Ukiah,CA,US",
+    "metric_units": false,
+    "pregame": true
+  },
+  "standings": {
+    "divisions": [
+      "NL WEST",
+      "NL Wild Card"
+    ]
+  },
+  "plugins": {},
+  "time_format": "12h",
+  "end_of_day": "00:00",
+  "sync_delay_seconds": 0,
+  "api_refresh_rate": 5,
+  "scrolling_speed": 2,
+  "editorial_blurb": true,
+  "debug": false,
+  "demo_date": false
+}
